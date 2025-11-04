@@ -2,5 +2,6 @@
   "spellcheck": false,
   "attachmentFolderPath": "attachments",
   "alwaysUpdateLinks": true,
-  "newFileLocation": "current"
+  "newFileLocation": "current",
+  "tabSize": 2
 }
