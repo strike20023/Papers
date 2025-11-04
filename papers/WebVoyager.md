@@ -1,0 +1,67 @@
+---
+link: https://arxiv.org/pdf/2401.13919
+github: https://github.com/MinorJerry/WebVoyager
+note: 提出WebVoyager，一个由大型多模态模型（LMM）驱动的端到端网页智能体；以“截图+元素文本”进行决策，并提出基于GPT-4V的自动评估协议；在包含15个真实网站的新基准上达到约59.1%的任务成功率，显著优于GPT-4（All Tools）与文本版WebVoyager。
+title: WebVoyager - Building an End-to-End Web Agent with Large Multimodal Models
+title_cn: WebVoyager：面向真实网站的端到端大型多模态网页智能体
+---
+
+## 摘要
+大型语言模型（LLM）推动了真实世界自主应用的发展，但现有网页智能体多仅支持单一模态，并常在简化的仿真环境或静态网页快照中评估，限制了真实场景的可用性。WebVoyager提出一个由大型多模态模型（LMM）驱动的网页智能体，可在真实网站中端到端完成用户指令：基于网页截图与交互元素文本（类型与内容）进行动作决策（点击、输入、滚动等），并通过自动化流水线执行。作者同时提出了一个包含15个常用网站的真实任务基准，以及一个利用GPT-4V多模态理解能力的自动评估协议，用于开放式任务的判定与评分。实验显示，WebVoyager在该基准上取得约59.1%任务成功率，较GPT-4（All Tools）与WebVoyager文本版有显著提升；自动评估与人工评判的一致率达到约85.3%。
+
+## 简介
+WebVoyager旨在模拟人类真实的网页浏览与任务执行过程，强调“端到端、多模态、在线导航”三要素：
+- 端到端：从用户任务输入到最终答案产出，过程中无需人工干预；
+- 多模态：同时利用网页截图中的视觉线索与页面元素的文本语义；
+- 在线导航：直接在真实网站环境中执行（基于 Selenium 等），而非静态离线快照。
+
+为增强模型对页面可交互元素的理解，作者借鉴 Set-of-Mark Prompting 思想，在截图上对可交互元素进行标记，引导决策模型更好地定位与操作。系统在每一步基于观察（截图 + 元素文本）形成“思考”，并选择动作执行，从而逐步完成复杂任务。
+
+## 方法
+1) 在线交互环境：基于 Selenium 构建真实网站操作环境，截取页面多模态信息（截图 + 交互元素文本/类型）。
+2) 元素标注与提示：在截图上显式标注可交互元素，结合文本信息输入至LMM以进行动作规划与选择。
+3) 动作空间与循环：支持点击、输入、滚动等基础动作，形成观察-思考-行动的闭环，直到任务完成或达到停止条件。
+4) 自动评估协议：针对开放式任务，利用 GPT-4V 对模型产出进行多模态判定与评分，降低人工评审成本，并报告与人工一致性（约85.3%）。
+
+## 评测与结果
+- 基准：从 15 个常用网站（如 Amazon、GitHub、Google、ArXiv、Coursera、BBC News 等）中收集具有代表性的真实任务，覆盖查询、导航、信息抽取、购买/预订等多类场景。
+- 指标：以任务成功率为主要指标，并报告自动评估与人工评审一致性。
+- 结果：WebVoyager 在该基准上达到约 59.1% 成功率，显著超越 GPT-4（All Tools）与文本版 WebVoyager；自动评估与人工的一致率约 85.3%。
+
+## 贡献亮点
+- 提出首个以 LMM 能力驱动的真实网站端到端网页智能体框架；
+- 引入“截图 + 元素文本”的多模态决策机制，并使用元素标注提升定位与操作的准确性；
+- 构建覆盖 15 个网站的真实任务基准，贴近实际使用场景；
+- 设计基于 GPT-4V 的自动评估协议，显著降低评测成本且与人工评审高度一致。
+
+## 局限与讨论
+- 评估依赖 GPT-4V 能力与提示设计，可能存在模型偏差与成本问题；
+- 在动态网页与防爬策略较强的网站上，环境稳定性与可复现性值得进一步讨论；
+- 多模态理解（尤其复杂布局、弹窗、长页面）仍具挑战，动作规划的鲁棒性与可解释性有待提升。
+
+## 相关工作
+- WebArena、Mind2Web：以离线快照或逐步操作序列评测网页导航能力；
+- Pix2Struct：将视觉结构化理解用于网页等场景；
+- GPT-4V grounded web agents：强调通过视觉-文本融合提升网页操作的可用性与准确性。
+
+## 引用与链接
+- 论文：WebVoyager: Building an End-to-End Web Agent with Large Multimodal Models（ACL 2024）
+- DOI：https://doi.org/10.48550/arXiv.2401.13919
+- arXiv：https://arxiv.org/abs/2401.13919
+- PDF：https://arxiv.org/pdf/2401.13919
+- 代码：https://github.com/MinorJerry/WebVoyager
+
+### BibTeX
+```bibtex
+@misc{he2024webvoyager,
+  title        = {WebVoyager: Building an End-to-End Web Agent with Large Multimodal Models},
+  author       = {He, Hongliang and Yao, Wenlin and Ma, Kaixin and Yu, Wenhao and Dai, Yong and Zhang, Hongming and Lan, Zhenzhong and Yu, Dong},
+  year         = {2024},
+  eprint       = {2401.13919},
+  archivePrefix= {arXiv},
+  primaryClass = {cs.CL},
+  note         = {Accepted to ACL 2024},
+  doi          = {10.48550/arXiv.2401.13919}
+}
+```
+
