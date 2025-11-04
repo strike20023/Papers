@@ -1,0 +1,11 @@
+views:
+  - type: table
+    name: Table
+    filters:
+      or:
+        - file.folder == "1.papers"
+        - file.folder == "1.repositories"
+    order:
+      - file.name
+      - tags
+      - link

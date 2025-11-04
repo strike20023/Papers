@@ -2,5 +2,7 @@
   "obsidian-local-rest-api",
   "dataview",
   "templater-obsidian",
-  "homepage"
+  "homepage",
+  "obsidian-outliner",
+  "obsidian-icon-folder"
 ]

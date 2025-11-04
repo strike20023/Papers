@@ -4,6 +4,9 @@ github: https://github.com/MinorJerry/WebVoyager
 note: 提出WebVoyager，一个由大型多模态模型（LMM）驱动的端到端网页智能体；以“截图+元素文本”进行决策，并提出基于GPT-4V的自动评估协议；在包含15个真实网站的新基准上达到约59.1%的任务成功率，显著优于GPT-4（All Tools）与文本版WebVoyager。
 title: WebVoyager - Building an End-to-End Web Agent with Large Multimodal Models
 title_cn: WebVoyager：面向真实网站的端到端大型多模态网页智能体
+tags:
+  - paper
+icon: LiNewspaper
 ---
 
 ## 摘要
@@ -43,25 +46,3 @@ WebVoyager旨在模拟人类真实的网页浏览与任务执行过程，强调�
 - WebArena、Mind2Web：以离线快照或逐步操作序列评测网页导航能力；
 - Pix2Struct：将视觉结构化理解用于网页等场景；
 - GPT-4V grounded web agents：强调通过视觉-文本融合提升网页操作的可用性与准确性。
-
-## 引用与链接
-- 论文：WebVoyager: Building an End-to-End Web Agent with Large Multimodal Models（ACL 2024）
-- DOI：https://doi.org/10.48550/arXiv.2401.13919
-- arXiv：https://arxiv.org/abs/2401.13919
-- PDF：https://arxiv.org/pdf/2401.13919
-- 代码：https://github.com/MinorJerry/WebVoyager
-
-### BibTeX
-```bibtex
-@misc{he2024webvoyager,
-  title        = {WebVoyager: Building an End-to-End Web Agent with Large Multimodal Models},
-  author       = {He, Hongliang and Yao, Wenlin and Ma, Kaixin and Yu, Wenhao and Dai, Yong and Zhang, Hongming and Lan, Zhenzhong and Yu, Dong},
-  year         = {2024},
-  eprint       = {2401.13919},
-  archivePrefix= {arXiv},
-  primaryClass = {cs.CL},
-  note         = {Accepted to ACL 2024},
-  doi          = {10.48550/arXiv.2401.13919}
-}
-```
-

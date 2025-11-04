@@ -4,6 +4,9 @@ github: https://github.com/sierra-research/tau-bench
 note: 提出τ-bench，用真实领域的工具与政策约束模拟用户-代理对话；以数据库最终状态对比目标状态评估，并引入pass^k一致性指标，显示SOTA函数调用代理仍低于50%任务成功率。
 title: "τ-bench: A Benchmark for Tool-Agent-User Interaction in Real-World Domains"
 title_cn: τ-bench：真实场景中工具-代理-用户交互的基准
+tags:
+  - paper
+icon: LiNewspaper
 ---
 
 ## 摘要
@@ -46,5 +49,3 @@ $$
 - 不正确的调用工具的参数：在复杂数据库和用户意图方面需要提高常识和数值推理能力
 - 错误的决策：未充分利用政策文件
 - 组合任务只完成部分：上下文与记忆能力，忽略了隐式动作
-
-

@@ -1,0 +1,96 @@
+{
+  "settings": {
+    "migrated": 6,
+    "iconPacksPath": ".obsidian/icons",
+    "fontSize": 16,
+    "emojiStyle": "native",
+    "iconColor": null,
+    "recentlyUsedIcons": [
+      "LiNewspaper",
+      "LiDatabaseZap",
+      "LiAlertCircle",
+      "LiCalendarCheck",
+      "LiGithub"
+    ],
+    "recentlyUsedIconsSize": 5,
+    "rules": [],
+    "extraMargin": {
+      "top": 0,
+      "right": 4,
+      "bottom": 0,
+      "left": 0
+    },
+    "iconInTabsEnabled": true,
+    "iconInTitleEnabled": true,
+    "iconInTitlePosition": "above",
+    "iconInFrontmatterEnabled": true,
+    "iconInFrontmatterFieldName": "icon",
+    "iconColorInFrontmatterFieldName": "iconColor",
+    "iconsBackgroundCheckEnabled": false,
+    "iconsInNotesEnabled": true,
+    "iconsInLinksEnabled": true,
+    "iconIdentifier": ":",
+    "lucideIconPackType": "native",
+    "debugMode": false,
+    "useInternalPlugins": false
+  },
+  "1.papers": "LiNewspaper",
+  "0.templates": "LiWallpaper",
+  "0.attachments": "LiPaperclip",
+  "1.repositories": "LiGithub",
+  "2.daily_notes": "LiCalendarCheck",
+  "0.archives": "LiArchive",
+  "Main Page.md": "LiAlertCircle",
+  "data.base": "LiDatabaseZap",
+  "1.papers/ALOE.md": {
+    "iconName": "LiNewspaper"
+  },
+  "0.templates/paper.md": {
+    "iconName": "LiNewspaper"
+  },
+  "0.templates/repo.md": {
+    "iconName": "LiGithub"
+  },
+  "1.papers/Know Me, Respond to Me.md": {
+    "iconName": "LiNewspaper"
+  },
+  "1.papers/MultiWOZ.md": {
+    "iconName": "LiNewspaper"
+  },
+  "1.papers/Personalized Reasoning.md": {
+    "iconName": "LiNewspaper"
+  },
+  "1.papers/SE-Agent.md": {
+    "iconName": "LiNewspaper"
+  },
+  "1.papers/τ-bench.md": {
+    "iconName": "LiNewspaper"
+  },
+  "1.repositories/OpenAlpha_Evolve.md": {
+    "iconName": "LiGithub"
+  },
+  "1.repositories/OpenEvolve.md": {
+    "iconName": "LiGithub"
+  },
+  "1.repositories/PersonaAgent.md": {
+    "iconName": "LiGithub"
+  },
+  "1.repositories/TaskDialogue.md": {
+    "iconName": "LiGithub"
+  },
+  "0.templates/daily note.md": {
+    "iconName": "LiCalendarCheck"
+  },
+  "2.daily_notes/2025-11-04.md": {
+    "iconName": "LiCalendarCheck"
+  },
+  "2.daily_notes/2025-11-03.md": {
+    "iconName": "LiCalendarCheck"
+  },
+  "0.archives/WebVoyager.md": {
+    "iconName": "LiNewspaper"
+  },
+  "1.papers/MemoryAgentBench.md": {
+    "iconName": "LiNewspaper"
+  }
+}

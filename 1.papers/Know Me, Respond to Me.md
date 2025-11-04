@@ -4,6 +4,9 @@ github: https://github.com/bowen-upenn/PersonaMem
 note: 发表在COLM 2025
 title: Know Me, Respond to Me - Benchmarking LLMs for Dynamic User Profiling and Personalized Responses at Scale
 title_cn: 知道我，回复我 - 基准测试大型语言模型在动态用户画像和个性化响应中的应用
+tags:
+  - paper
+icon: LiNewspaper
 ---
 ## 摘要
 Large Language Models (LLMs) have emerged as personalized assistants for users across a wide range of tasks – from offering writing support to delivering tailored recommendations or consultations. Over time, the interaction history between a user and an LLM can provide extensive information about an individual’s traits and preferences. However, open questions remain on how well LLMs today can effectively leverage such history to 

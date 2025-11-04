@@ -1,7 +1,9 @@
 {
   "spellcheck": false,
-  "attachmentFolderPath": "attachments",
+  "attachmentFolderPath": "0.attachments",
   "alwaysUpdateLinks": true,
   "newFileLocation": "current",
-  "tabSize": 2
+  "tabSize": 2,
+  "propertiesInDocument": "visible",
+  "showLineNumber": true
 }

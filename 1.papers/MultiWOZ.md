@@ -4,6 +4,9 @@ github:
 note: 发布MultiWOZ，一个跨域、全标注的Wizard-of-Oz任务型对话数据集（约1万对话，含belief state与dialogue act标签），为端到端对话与状态追踪研究提供基准；论文被EMNLP 2018接收。
 title: MultiWOZ - A Large-Scale Multi-Domain Wizard-of-Oz Dataset for Task-Oriented Dialogue Modelling
 title_cn: MultiWOZ：大规模多领域Wizard-of-Oz任务型对话数据集
+tags:
+  - paper
+icon: LiNewspaper
 ---
 
 ## 摘要
@@ -25,3 +28,4 @@ MultiWOZ 的目标是为任务型对话系统提供一个多领域、规模化�
 ## 基准与结果
 - 任务：对话状态追踪（DST）、对话行为识别（DA）、响应生成（NLG）等；
 - 结果：报告了多项基线模型的性能，展示数据的可用性并为后续工作提供基准参考。
+
