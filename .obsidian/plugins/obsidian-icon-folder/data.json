@@ -92,5 +92,8 @@
   },
   "1.papers/MemoryAgentBench.md": {
     "iconName": "LiNewspaper"
+  },
+  "1.papers/A-MEM.md": {
+    "iconName": "LiNewspaper"
   }
 }

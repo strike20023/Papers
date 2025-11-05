@@ -9,3 +9,7 @@ views:
       - file.name
       - tags
       - link
+      - title_cn
+    sort:
+      - property: file.ctime
+        direction: DESC
